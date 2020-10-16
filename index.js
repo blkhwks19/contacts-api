@@ -35,7 +35,7 @@ app.get('/contacts', (req, res) => {
   Contact.findAll()
     .then(contacts => {
       console.log('Successfully retrieved all contacts');
-      res.status(200).json({ count: contacts.length, contacts: contacts});
+      res.status(200).json(contacts);
     })
     .catch((err) => {
       console.log('There was an error retrieving all contacts', err);
