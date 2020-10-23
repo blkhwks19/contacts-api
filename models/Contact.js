@@ -11,7 +11,5 @@ module.exports = (sequelize, DataTypes) => {
     zip: DataTypes.STRING,
     email: DataTypes.STRING,
     phone: DataTypes.STRING,
-  }, {
-    paranoid: true,
   });
 }
